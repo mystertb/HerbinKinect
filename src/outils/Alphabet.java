@@ -11,7 +11,7 @@ import java.util.ArrayList;
 /**
  *
  * @author ytiab
- * Classe qui permet d'attribuer des couleurs aux motifs en fonction du texte entré grace à l'algorithme d'herbin
+ * Classe qui permet d'attribuer des couleurs aux motifs en fonction du texte entrï¿½ grace ï¿½ l'algorithme d'herbin
  */
 public class Alphabet {
 
@@ -44,7 +44,7 @@ public class Alphabet {
         
     }
 
-    //Calcule la couleur la plus proche du mot entré en parametre
+    //Calcule la couleur la plus proche du mot entrï¿½ en parametre
     public void couleurLaPlusProche(String s) {
 
         char c = 0;
@@ -83,14 +83,14 @@ public class Alphabet {
 
     }
 
-    //Applique un filtre négatif sur la couleur courante
+    //Applique un filtre nï¿½gatif sur la couleur courante
     public void negatif() {
 
         couleur = new Color(255 - couleur.getRed(), 255 - couleur.getGreen(), 255 - couleur.getBlue());
 
     }
     
-    //attribue une couleur donnée en parametre à la couleur courante
+    //attribue une couleur donnï¿½e en parametre ï¿½ la couleur courante
     public void setCouleur(Color couleur) {
         
         this.couleur=couleur;
@@ -111,194 +111,23 @@ public class Alphabet {
 
     }
 
-    //Attribue une nouvelle couleur à la couleur courante en fonction d'un caractère grace à l'algorithme d'herbin
+    //Attribue une nouvelle couleur ï¿½ la couleur courante en fonction d'un caractï¿½re grace ï¿½ l'algorithme d'herbin
     public void chargerCouleur(char c) {
 
         int r = 0, v = 0, b = 0;
 
         switch (c) {
-            case 'a':
-                r = 218;
-                v = 45;
-                b = 184;
-                colorToChar = 'a';
-                nbFormes = 4;
-                break;
-            case 'b':
-                r = 131;
-                v = 18;
-                b = 60;
-                colorToChar = 'b';
-                nbFormes = 2;
-                break;
-            case 'c':
-                r = 168;
-                v = 29;
-                b = 33;
-                colorToChar = 'c';
-                nbFormes = 2;
-                break;
-            case 'd':
-                r = 209;
-                v = 30;
-                b = 35;
-                colorToChar = 'd';
-                nbFormes = 1;
-                break;
-            case 'e':
-                r = 250;
-                v = 12;
-                b = 18;
-                colorToChar = 'e';
-                nbFormes = 1;
-                break;
-            case 'f':
-                r = 251;
-                v = 41;
-                b = 10;
-                colorToChar = 'f';
-                nbFormes = 2;
-                break;
-            case 'g':
-                r = 178;
-                v = 38;
-                b = 24;
-                colorToChar = 'g';
-                nbFormes = 2;
-                break;
-            case 'h':
-                r = 247;
-                v = 121;
-                b = 38;
-                colorToChar = 'h';
-                nbFormes = 2;
-                break;
-            case 'i':
-                r = 246;
-                v = 78;
-                b = 10;
-                colorToChar = 'i';
-                nbFormes = 2;
-                break;
-            case 'j':
-                r = 246;
-                v = 117;
-                b = 10;
-                colorToChar = 'j';
-                nbFormes = 2;
-                break;
-            case 'k':
-                r = 246;
-                v = 146;
-                b = 10;
-                colorToChar = 'k';
-                nbFormes = 2;
-                break;
-            case 'l':
-                r = 246;
-                v = 238;
-                b = 10;
-                colorToChar = 'l';
-                nbFormes = 1;
-                break;
-            case 'm':
-                r = 210;
-                v = 205;
-                b = 74;
-                colorToChar = 'm';
-                nbFormes = 1;
-                break;
-            case 'n':
-                r = 251;
-                v = 251;
-                b = 251;
-                colorToChar = 'n';
-                nbFormes = 4;
-                break;
-            case 'o':
-                r = 45;
-                v = 46;
-                b = 10;
-                colorToChar = 'o';
-                nbFormes = 2;
-                break;
-            case 'p':
-                r = 115;
-                v = 168;
-                b = 77;
-                colorToChar = 'p';
-                nbFormes = 2;
-                break;
-            case 'q':
-                r = 15;
-                v = 134;
-                b = 94;
-                colorToChar = 'q';
-                nbFormes = 2;
-                break;
-            case 'r':
-                r = 15;
-                v = 130;
-                b = 164;
-                colorToChar = 'r';
-                nbFormes = 2;
-                break;
-            case 's':
-                r = 20;
-                v = 77;
-                b = 93;
-                colorToChar = 's';
-                nbFormes = 2;
-                break;
-            case 't':
-                r = 20;
-                v = 50;
-                b = 90;
-                colorToChar = 't';
-                nbFormes = 2;
-                break;
-            case 'u':
-                r = 50;
-                v = 70;
-                b = 150;
-                colorToChar = 'u';
-                nbFormes = 1;
-                break;
-            case 'v':
-                r = 0;
-                v = 0;
-                b = 0;
-                colorToChar = 'v';
-                nbFormes = 4;
-                break;
-            case 'w':
-                r = 35;
-                v = 50;
-                b = 105;
-                colorToChar = 'w';
-                nbFormes = 2;
-                break;
-            case 'x':
-                r = 130;
-                v = 44;
-                b = 140;
-                colorToChar = 'x';
-                nbFormes = 2;
-                break;
-            case 'y':
-                r = 100;
-                v = 15;
-                b = 143;
-                colorToChar = 'y';
-                nbFormes = 1;
-                break;
-            case 'z':
-                r = 45;
-                v = 17;
-                b = 81;
-                colorToChar = 'z';
-                nbFormes = 3;
-                break;
+           
+           default:
+           
+                r = (int) (Math.random()*255);
+                v = (int) (Math.random()*255);
+                b = (int) (Math.random()*255);
+                colorToChar = c;
+                nbFormes = (int) (Math.random()*5);
+           
+           break;
+           
         }
 
         noteMusic = 53 - ((((int) (colorToChar)) - 97) * 2);
